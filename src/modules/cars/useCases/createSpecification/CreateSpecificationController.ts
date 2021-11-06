@@ -7,12 +7,12 @@ class CreateSpecificationController {
         private createSpecificationUseCase: CreateSpecificationUseCase
     ) {}
 
-    handle(request: Request, response: Response) {
+    handle(request: Request, response: Response): Response {
         const { name, description } = request.body;
 
         this.createSpecificationUseCase.execute({ name, description });
 
-        response.status(201).send();
+        return response.status(201).send();
     }
 }
 
