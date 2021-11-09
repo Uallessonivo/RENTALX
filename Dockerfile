@@ -1,6 +1,6 @@
 FROM node
 
-WORKDIR C:\Ignite\Images
+WORKDIR /user/app
 
 COPY package.json ./
 
