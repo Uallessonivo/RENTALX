@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+        "dev": "./node_modules/.bin/ts-node-dev --poll --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
     },
     "repository": "https://github.com/Uallessonivo/rentalx.git",
     "author": "Uallesson Nunes Ivo <uallessons@gmail.com>",
