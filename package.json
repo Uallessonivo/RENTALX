@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "dev": "ts-node-dev -r -tsconfig-paths/register --inspect --respawn --poll --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
-        "typeorm": "ts-node-dev -r -tsconfig-paths/register ./node_modules/typeorm/cli",
+        "dev": "ts-node-dev -r tsconfig-paths/register --respawn --inspect --ignore-watch node_modules --transpile-only src/shared/infra/http/server.ts",
+        "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli",
         "test": "jest"
     },
     "repository": "https://github.com/Uallessonivo/rentalx.git",
