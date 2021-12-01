@@ -5,7 +5,8 @@
     "scripts": {
         "dev": "ts-node-dev -r tsconfig-paths/register --respawn --inspect --ignore-watch node_modules --transpile-only src/shared/infra/http/server.ts",
         "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli",
-        "test": "jest"
+        "test": "jest",
+        "seed:admin": "ts-node src/shared/infra/typeorm/seeds/admin.ts"
     },
     "repository": "https://github.com/Uallessonivo/rentalx.git",
     "author": "Uallesson Nunes Ivo <uallessons@gmail.com>",
