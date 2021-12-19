@@ -73,4 +73,14 @@ O usuário deve estar logado
 Deve ser possível realizar a busca de todos os alugueis para o usuário
 
 **Regra de negócio**
-O usuário deve estar logado
+
+# Recuperação de senha
+
+**Requisitos Funcionais**
+Deve ser possível o usuário recuperar a senha informando o e-mail
+O usuário deve receber um e-mail com o passo a passo para a recuperação de senha
+o usuário deve conseguir inserir uma nova senha
+
+**Regra de negócio**
+O usuário precisa informar uma nova senha
+o link enviado para a recuperação deve expirar em 3 horas
