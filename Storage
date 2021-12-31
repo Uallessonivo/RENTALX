@@ -1,0 +1,5 @@
+STORAGES = S3
+
+KEY=
+SECRET=
+
