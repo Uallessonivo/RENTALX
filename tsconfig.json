@@ -3,9 +3,7 @@
         "target": "es5",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-
         "module": "commonjs",
-
         "baseUrl": "./src",
         "paths": {
             "@modules/*": ["modules/*"],
@@ -14,15 +12,10 @@
             "@utils/*": ["utils/*"],
             "@errors/*": ["errors/*"]
         },
-
         "resolveJsonModule": true,
-
         "outDir": "./dist",
-
         "esModuleInterop": true,
-
         "forceConsistentCasingInFileNames": true,
-
         "skipLibCheck": true
     }
 }
