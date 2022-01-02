@@ -25,11 +25,11 @@ jobs:
       - name: Build
         run: yarn build
 
-      - uses: appleboy/ssh-action@v0.1.4
+      - uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
           port: ${{ secrets.SSH_PORT }}
+          username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           source: "., !node_modules"
           target: "test"
