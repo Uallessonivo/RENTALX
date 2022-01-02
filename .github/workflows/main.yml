@@ -34,3 +34,16 @@ jobs:
           key: ${{ secrets.KEY }}
           source: "., !node_modules"
           target: "test"
+      
+      - name: Update API
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.KEY }}
+          script: |
+            cd ~/app/rentalx
+            yarn
+            ./node_modules/.bin/typeorm migration:run
+            pm2 restart rentalx_api
