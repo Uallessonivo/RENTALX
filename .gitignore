@@ -106,3 +106,16 @@ dist
 
 # VsCode
 .vscode
+
+# Coverafe
+coverage
+
+# TMP
+tmp/*
+!tmp/.gitkeep
+
+# Dist
+dist
+
+# Configs
+ormconfig.json
